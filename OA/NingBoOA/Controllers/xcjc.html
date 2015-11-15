@@ -1,0 +1,178 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+    <head id="Head1">
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+        <title>宁波市环境保护局移动执法系统</title>
+        <style type="text/css">
+            <!--
+            body,p,ul,dl,dt,dd,h1,h2{margin:0; padding:0; font: normal 18px "微软雅黑",Tahoma,Verdana, Arial;}
+            body{background:#F0F0F0;color: #585858}
+            .main { width:99%;margin:10px auto;background:#fff; border:#E3E0E0 1px solid;min-height:940;
+                -moz-border-radius:10px;/*仅Firefox支持，实现圆角效果*/
+                -webkit-border-radius:10px;/*仅Safari,Chrome支持，实现圆角效果*/
+                -khtml-border-radius:10px;/*仅Safari,Chrome支持，实现圆角效果*/
+                border-radius:10px;/*仅Opera，Safari,Chrome支持，实现圆角效果*/
+            }
+            
+            table.table_header{width:96%; border: 0px; font-weight:100; margin:10px auto; font-size:12px;border-left:none; border-bottom:2px solid #e0e0e0;}
+            
+            table.table_edit{width:96%; border: 1px solid #5c88bf; font-weight:100; margin:8px auto; background:#86acd4; font-size:12px;border-left:none; border-bottom:2px solid #e0e0e0;}
+            table.table_edit tr th i{ color:#FF0000;}
+            table.table_edit tr td i{ color:#FF0000;}
+            
+            table.table_edit tr td{font-size: 18px; text-align:left; padding-left:5px; padding-right:5px;height:45px; border-bottom: 1px solid #86acd4; border-left: 1px solid #5c88bf; line-height:22px; background: #ffffff;}
+            table.table_edit tr th{font-size: 18px;font-weight:100; text-align:right; padding-right:5px; height:40px; border-bottom: 1px solid #86acd4; border-left: 1px solid #5c88bf; line-height:22px; background: #ffffff;}
+            table.table_edit tbody tr.selected td{background:#ffffff; color: #ffffff;}/*自然状态*/
+            table.table_edit tbody tr.ruled td{color: #000;background-color:#f6fbff; }/*鼠标经过 #ffffec*/
+            table.table_edit td input  {font-size:18px;} /*20110114新增 统一input字体大小*/
+            table.table_edit td textarea {font-size:18px;} /*20110114新增 统一textarea字体大小*/
+            table.table_edit td select {font-size:18px;} /*20110114新增 统一select字体大小*/
+            -->
+            </style>
+    </head>
+    <body>
+        <div class="main">
+            <table class="table_header">
+                <tr>
+                    <td>
+                        <p style="font-size: 30px; font-family: 楷体; text-align: center; padding-top: 10px;
+                        line-height: 10px;">
+                        现场检查记录表</p>
+                        <p style="font-size: 18px; text-align: center; padding-top: 20px; margin-left: 8px">
+                        检查时间:t_DCSJ_t&nbsp;&nbsp;&nbsp;&nbsp;检查人员:t_JCR_t&nbsp;&nbsp;&nbsp;&nbsp;检查事由:t_ZFXZ_t</p>
+                    </td>
+                </tr>
+            </table>
+            <table class="table_edit" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                    <th rowspan="4" width="10%" style="text-align: center; font-weight: bold; font-size: 18px">企业档案</th>
+                    <th style="text-align: center; font-size: 18px;">企业名称</th>
+                    <td colspan="5">t_DWMC_t</td>
+                </tr>
+                <tr>
+                    <th width="15%" style="text-align: center; font-size: 18px;">区域</th>
+                    <td width="15%">t_SSQY_t</td>
+                    <th width="15%" style="text-align: center; font-size: 18px;">法人代表</th>
+                    <td width="15%">t_DWFZR_t</td>
+                    <th width="15%" style="text-align: center; font-size: 18px;">企业现状</th>
+                    <td width="15%">t_QYXZ_t</td>
+                </tr>
+                <tr>
+                    <th style="text-align: center; font-size: 18px;">地址</th>
+                    <td colspan="5">t_DWDZ_t</td>
+                </tr>
+                <tr>
+                    <th style="text-align: center; font-size: 18px;">环保管理人</th>
+                    <td>t_HBFZR_t</td>
+                    <th style="text-align: center; font-size: 18px;">联系电话</th>
+                    <td>t_HBFZRDH_t</td>
+                    <th style="text-align: center; font-size: 18px;">GPS点位</th>
+                    <td>t_GPSDWN_t t_GPSSWE_t</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" style="text-align: center; font-weight: bold; font-size: 18px">基本情况</th>
+                    <th style="text-align: center; font-size: 18px;">行业类型</th>
+                    <td>t_SSHY_t</td>
+                    <th style="text-align: center; font-size: 18px;">纳管情况</th>
+                    <td>t_NGQK_t</td>
+                    <th style="text-align: center; font-size: 18px;">项目审批</th>
+                    <td>t_XMSP_t</td>
+                </tr>
+                <tr>
+                    <th style="text-align: center; font-size: 18px;">生产情况</th>
+                    <td>t_SCQK_t</td>
+                    <th style="text-align: center; font-size: 18px;">雨污分流</th>
+                    <td>t_YWFL_t</td>
+                    <th style="text-align: center; font-size: 18px;">项目批建</th>
+                    <td>t_XMPJ_t</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" style="text-align: center; font-weight: bold; font-size: 18px">废水情况</th>
+                    <th style="text-align: center; font-size: 18px;">排口规范</th>
+                    <td>t_GFPK_t</td>
+                    <th style="text-align: center; font-size: 18px;">排水情况</th>
+                    <td>t_XCPSQK_t</td>
+                    <th style="text-align: center; font-size: 18px;">设施运行</th>
+                    <td>t_FSSSYX_t</td>
+                </tr>
+                <tr>
+                    <th style="text-align: center; font-size: 18px;">药剂添加</th>
+                    <td>t_FSYJTJ_t</td>
+                    <th></th>
+                    <td></td>
+                    <th></th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th style="text-align: center; font-weight: bold; font-size: 18px">工艺废气情况</th>
+                    <th style="text-align: center; font-size: 18px;">药剂添加</th>
+                    <td>t_YJTJ_t</td>
+                    <th style="text-align: center; font-size: 18px;">设施运行</th>
+                    <td>t_FQSSYX_t</td>
+                    <th></th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th style="text-align: center; font-weight: bold; font-size: 18px">锅炉废气情况</th>
+                    <th style="text-align: center; font-size: 18px;">燃料类型</th>
+                    <td>t_GLRLLX_t</td>
+                    <th style="text-align: center; font-size: 18px;">药剂添加</th>
+                    <td>t_GLFQYJTJ_t</td>
+                    <th style="text-align: center; font-size: 18px;">设施运行</th>
+                    <td>t_GLFQSSYX_t</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" style="text-align: center; font-weight: bold; font-size: 18px">普通固废</th>
+                    <th style="text-align: center; font-size: 18px;">三防措施</th>
+                    <td>t_SFCS_t</td>
+                    <th style="text-align: center; font-size: 18px;">台账单据</th>
+                    <td>t_GFTZJL_t</td>
+                    <th style="text-align: center; font-size: 18px;">标志标识</th>
+                    <td>t_GFBZBS_t</td>
+                </tr>
+                <tr>
+                    <th style="text-align: center; font-size: 18px;">处置方式</th>
+                    <td>t_GFCZFS_t</td>
+                    <th></th>
+                    <td></td>
+                    <th></th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th rowspan="2" style="text-align: center; font-weight: bold; font-size: 18px">危废情况</th>
+                    <th style="text-align: center; font-size: 18px;">存贮环境</th>
+                    <td>t_CCQK_t</td>
+                    <th style="text-align: center; font-size: 18px;">台账单据</th>
+                    <td>t_TZDJ_t</td>
+                    <th style="text-align: center; font-size: 18px;">标志标识</th>
+                    <td>t_BQBS_t</td>
+                </tr>
+                <tr>
+                    <th style="text-align: center; font-size: 18px;">危废特性</th>
+                    <td>t_WFTX_t</td>
+                    <th style="text-align: center; font-size: 18px;">处置单位是<br />否具有资质</th>
+                    <td>t_WFCZDWZZ_t</td>
+                    <th></th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th style="text-align: center; font-weight: bold; font-size: 18px">在线监测</th>
+                    <th style="text-align: center; font-size: 18px;">设备类型</th>
+                    <td>t_SBLX_t</td>
+                    <th style="text-align: center; font-size: 18px;">运行情况</th>
+                    <td>t_YXQK_t</td>
+                    <th style="text-align: center; font-size: 18px;">建设安装</th>
+                    <td>t_SJ_t</td>
+                </tr>
+                <tr>
+                    <th style="text-align: center; font-weight: bold; font-size: 18px">环境应急</th>
+                    <th style="text-align: center; font-size: 18px;">应急预案</th>
+                    <td>t_YJYA_t</td>
+                    <th style="text-align: center; font-size: 18px;">设施物资</th>
+                    <td>t_YJWZ_t</td>
+                    <th style="text-align: center; font-size: 18px;">应急演练</th>
+                    <td>t_YLQK_t</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

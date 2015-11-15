@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>企业详情</title>
+        <style type="text/css">
+            <!--
+            body,p,ul,dl,dt,dd,h1,h2{margin:0; padding:0; font: normal 18px "微软雅黑",Tahoma,Verdana, Arial;}
+            body{background:#F0F0F0;color: #585858}
+            .main { width:99%;margin:10px auto;background:#fff; border:#E3E0E0 1px solid;min-height:960px;
+                -moz-border-radius:10px;/*仅Firefox支持，实现圆角效果*/
+                -webkit-border-radius:10px;/*仅Safari,Chrome支持，实现圆角效果*/
+                -khtml-border-radius:10px;/*仅Safari,Chrome支持，实现圆角效果*/
+                border-radius:10px;/*仅Opera，Safari,Chrome支持，实现圆角效果*/
+            }
+            
+            table.table_header{width:96%; border: 0px; font-weight:100; margin:10px auto; font-size:12px;border-left:none; border-bottom:2px solid #e0e0e0;}
+            table.table_edit tbody tr td t1{background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;}
+            table.table_edit{width:96%; border: 1px solid #5c88bf; font-weight:100; margin:10px auto; background:#86acd4; font-size:12px;border-left:none; border-bottom:2px solid #e0e0e0;}
+            table.table_edit tr th i{ color:#FF0000;}
+            table.table_edit tr td i{ color:#FF0000;}
+            .t1{background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;}
+            table.table_edit tr td{font-size: 18px; text-align:left; padding-left:5px; padding-right:5px;height:45px; border-bottom: 1px solid #86acd4; border-left: 1px solid #5c88bf; line-height:22px; background: #ffffff;}
+            table.table_edit tr th{font-size: 18px;font-weight:100; text-align:right; padding-right:5px; height:40px; border-bottom: 1px solid #86acd4; border-left: 1px solid #5c88bf; line-height:22px; background: #ffffff;}
+            table.table_edit thead tr td{font-size: 18px; text-align:center; padding-left:5px; padding-right:5px;height:45px; border-bottom: 1px solid #86acd4; border-left: 1px solid #5c88bf; line-height:22px; background: #ffffff;}
+            table.table_edit tbody tr.selected td{background:#ffffff; color: #ffffff;}/*自然状态*/
+            table.table_edit tbody tr.ruled td{color: #000;background-color:#f6fbff; }/*鼠标经过 #ffffec*/
+            table.table_edit td input  {font-size:18px;} /*20110114新增 统一input字体大小*/
+            table.table_edit td textarea {font-size:18px;} /*20110114新增 统一textarea字体大小*/
+            table.table_edit td select {font-size:18px;} /*20110114新增 统一select字体大小*/
+            -->
+            </style>
+    </head>
+    <body>
+        <div class="main">
+            <table class="table_header">
+                <tr>
+                    <td>
+                        <p style="font-size: 20px; font-family: 楷体; text-align: center; padding-top:5px;padding-bottom:10px;
+                        line-height: 10px;">t_QYMC_t-企业工商信息</p>
+                    </td>
+                </tr>
+            </table>
+            <table width="100%" cellpadding="0" cellspacing="0" class="table_edit">
+                <tr height="40" >
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">企业名称</td>
+                    <td width="32%">t_QYMC_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">注 册 号</td>
+                    <td width="32%">t_ZCH_t</td>
+                </tr>
+                <tr height="40" >
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">法定代表人</td>
+                    <td width="31%">t_FDDBR_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">住   所</td>
+                    <td width="32%">t_ZS_t</td>
+                </tr>
+                <tr height="40" >
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">邮政编码</td>
+                    <td width="31%">t_YZBM_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">电话号码</td>
+                    <td width="32%">t_DH_t</td>
+                </tr>
+                <tr height="40" >
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">经营范围</td>
+                    <td width="31%">t_JYFW_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">行业代码</td>
+                    <td width="32%">t_HY_t</td>
+                </tr>
+                <tr height="40" >
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">企业类型</td>
+                    <td width="31%">t_QYLX_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">成立日期</td>
+                    <td width="32%">t_CLRQ_t</td>
+                </tr>
+                <tr height="40" >
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">注册资本(万元)</td>
+                    <td width="31%">t_ZCZB_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">实际出资额(万元)</td>
+                    <td width="32%">t_SJCZE_t</td>
+                </tr>
+                <tr height="40" >
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">注册资本币种</td>
+                    <td width="31%">t_BZ_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">核准日期</td>
+                    <td width="32%">t_HZRQ_t</td>
+                </tr>
+                <tr height="40" >
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">经营期限起始日期</td>
+                    <td width="31%">t_JYQSRQ_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">经营权限截止日期)</td>
+                    <td width="32%">t_JYJZRQ_t</td>
+                </tr>
+                <tr height="40" >
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">登记机关</td>
+                    <td width="31%">t_DJJG_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">属地机关工商所</td>
+                    <td width="32%">t_GXDW_t</td>
+                </tr>
+                <tr height="40" >
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">企业状态</td>
+                    <td width="31%">t_ZT_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">组织机构代码</td>
+                    <td width="32%">t_ZZJGDM_t</td>
+                </tr>
+                <tr height="40" >
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">经营场所</td>
+                    <td width="31%">t_JYCS_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">住所登记机关</td>
+                    <td width="32%">t_ZSDJJG_t</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

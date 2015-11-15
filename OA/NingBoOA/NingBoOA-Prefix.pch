@@ -1,0 +1,58 @@
+//
+// Prefix header for all source files of the 'NingBoOA' target in the 'NingBoOA' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+
+//数据同步完毕
+#define kNotifyDataSyncFininshed @"DataSyncFinished"
+
+#define LIGHT_BLUE_UICOLOR [UIColor colorWithRed:231.0/255 green:240.0/255 blue:236.0/255 alpha:1]
+
+//匹配年-月-日正则表达式
+#define DATE @"([0-9]{3}[1-9]|[0-9]{2}[1-9][0-9]{1}|[0-9]{1}[1-9][0-9]{2}|[1-9][0-9]{3})-(((0[13578]|1[02])-(0[1-9]|[12][0-9]|3[01]))|((0[469]|11)-(0[1-9]|[12][0-9]|30))|(02-(0[1-9]|[1][0-9]|2[0-8])))"
+
+//每页大小
+#define ONE_PAGE_SIZE @"20"
+//
+#define kWebService_HistoryList  7
+#define kWebService_SaveProcess  1
+#define kWebService_ReturnBack   2
+#define kWebService_NextProcess  3
+#define kWebService_Reback   5
+
+#define HBSC_DB_NAME  @"hbsc_data" //环保手册数据库名称
+
+//如果定义此宏，表示记录请求的webservice，否则不记录
+#define Save_OperateLog
+
+
+
+//WebService的默认命名空间名称
+#define WEBSERVICE_NAMESPACE @"http://tempuri.org/"
+
+//网络请求出错消息提示
+#define NETWORK_DATA_ERROR_MESSAGE @"获取数据失败,请稍后再试."
+
+#define NETWORK_PARSE_ERROR_MESSAGE @"请求网络超时,请稍后再试."
+
+//通知公告和工作动态地址
+#define News_WebService @"http://10.33.2.14:8091/WcfArticle.svc/"
+
+//附件上传
+#define UploadAttach_WebService @"http://10.33.2.141:8080/FjService/AttachMent.asmx"
+
+//移动执法和污染查询地址
+#define Inquiry_WebService @"http://10.33.2.27/MobileLawService_OA/Services/%@"
+
+#define MOBILELAW_OA_URL_HEADER @"http://218.108.6.118/MobileLawService_OA/Services/%@"

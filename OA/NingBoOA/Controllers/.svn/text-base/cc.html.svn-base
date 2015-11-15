@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>企业详情</title>
+        <style type="text/css">
+            <!--
+            body,p,ul,dl,dt,dd,h1,h2{margin:0; padding:0; font: normal 18px "微软雅黑",Tahoma,Verdana, Arial;}
+            body{background:#F0F0F0;color: #585858}
+            .main { width:99%;margin:10px auto;background:#fff; border:#E3E0E0 1px solid;min-height:960px;
+                -moz-border-radius:10px;/*仅Firefox支持，实现圆角效果*/
+                -webkit-border-radius:10px;/*仅Safari,Chrome支持，实现圆角效果*/
+                -khtml-border-radius:10px;/*仅Safari,Chrome支持，实现圆角效果*/
+                border-radius:10px;/*仅Opera，Safari,Chrome支持，实现圆角效果*/
+            }
+            
+            table.table_header{width:96%; border: 0px; font-weight:100; margin:10px auto; font-size:12px;border-left:none; border-bottom:2px solid #e0e0e0;}
+            table.table_edit tbody tr td t1{background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;}
+            table.table_edit{width:96%; border: 1px solid #5c88bf; font-weight:100; margin:10px auto; background:#86acd4; font-size:12px;border-left:none; border-bottom:2px solid #e0e0e0;}
+            table.table_edit tr th i{ color:#FF0000;}
+            table.table_edit tr td i{ color:#FF0000;}
+            .t1{background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;}
+            table.table_edit tr td{font-size: 18px; text-align:left; padding-left:5px; padding-right:5px;height:45px; border-bottom: 1px solid #86acd4; border-left: 1px solid #5c88bf; line-height:22px; background: #ffffff;}
+            table.table_edit tr th{font-size: 18px;font-weight:100; text-align:right; padding-right:5px; height:40px; border-bottom: 1px solid #86acd4; border-left: 1px solid #5c88bf; line-height:22px; background: #ffffff;}
+            table.table_edit thead tr td{font-size: 18px; text-align:center; padding-left:5px; padding-right:5px;height:45px; border-bottom: 1px solid #86acd4; border-left: 1px solid #5c88bf; line-height:22px; background: #ffffff;}
+            table.table_edit tbody tr.selected td{background:#ffffff; color: #ffffff;}/*自然状态*/
+            table.table_edit tbody tr.ruled td{color: #000;background-color:#f6fbff; }/*鼠标经过 #ffffec*/
+            table.table_edit td input  {font-size:18px;} /*20110114新增 统一input字体大小*/
+            table.table_edit td textarea {font-size:18px;} /*20110114新增 统一textarea字体大小*/
+            table.table_edit td select {font-size:18px;} /*20110114新增 统一select字体大小*/
+            -->
+            </style>
+    </head>
+    <body>
+        <div class="main">
+            <table class="table_header">
+                <tr>
+                    <td>
+                        <p style="font-size: 20px; font-family: 楷体; text-align: center; padding-top:5px;padding-bottom:10px;
+                        line-height: 10px;">t_MC_t-企业概况</p>
+                    </td>
+                </tr>
+            </table>
+            <table width="100%" cellpadding="0" cellspacing="0" class="table_edit">
+                <tr height="40" >
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">企业名称</td>
+                    <td width="33%" colspan="2">t_MC_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="15%">曾 用 名</td>
+                    <td width="34%" colspan="2">t_CYM_t</td>
+                </tr>
+                <tr height="40">
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">法定代表人</td>
+                    <td colspan="2" width="10%">t_QYFR_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="12%">法人代码</td>
+                    <td colspan="2" width="11%">t_QYFRDM_t</td>
+                </tr>
+                <tr>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="15%">联系人</td>
+                    <td colspan="2" width="10%">t_LXR_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="12%">联系电话</td>
+                    <td colspan="2" width="12%">t_LXDH_t</td>
+                </tr>
+                <tr height="40">
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" >中心经度</td>
+                    <td colspan="2">t_ZXJD_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">中心纬度</td>
+                    <td colspan="2">t_ZXWD_t</td>
+                </tr>
+                <tr>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">邮政编码</td>
+                    <td colspan="2">t_YZBM_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">投产日期</td>
+                    <td colspan="2">t_TCRQ_t</td>
+                </tr>
+                <tr height="40">
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%" >企业地址</td>
+                    <td width="33%" colspan="2">t_DZ_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="15%">工商执照</td>
+                    <td width="34%" colspan="2">t_GSZZ_t</td>
+                </tr>
+                <tr height="35">
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">登记注册类型</td>
+                    <td width="16%" colspan="2">t_DJZCLX_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="17%">行业类别</td>
+                    <td width="15%" colspan="2">t_HYLB_t</td>
+                    
+                </tr>
+                <tr height="40">
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">企业规模</td>
+                    <td width="16%" colspan="2">t_QYGM_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">重点污染源控制级别</td>
+                    <td colspan="2">t_GLJB_t</td>
+                </tr>
+                <tr height="35">
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">是否有危险化学品</td>
+                    <td colspan="2">t_WXHXP_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">是否有危险固废</td>
+                    <td  colspan="2">t_WXGF_t</td>
+                </tr>
+                <tr height="35">
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">是否有放射性同位素</td>
+                    <td width="15%">t_SFFSXWRY_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">排水去向类型</td>
+                    <td width="15%">t_PSQXLX_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" width="18%">受纳水体名称</td>
+                    <td width="16%">t_SNST_t</td>
+                </tr>
+                <tr height="35">
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">排入污水处理厂名称</td>
+                    <td >t_WSCLCMC_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">排污口是否符合规范</span></td>
+                    <td >t_PKSFFHGF_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">是否已安装脱硫设施</span></td>
+                    <td >t_SFAZTLSS_t</td>
+                </tr>
+                <tr height="35">
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">废水治理设施数（套）</td>
+                    <td>t_FQZLSS_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">废水治理设施处理能力<br>
+                        （吨/日）</td>
+                    <td>t_FSZLNL_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">实际处理能力<br>
+                        （吨/日）</td>
+                    <td>t_FSSJZLNL_t</td>
+                </tr>
+                <tr height="35">
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">废气治理设施数（套）</td>
+                    <td >t_FQZLSS_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">锅炉数（台）</td>
+                    <td >t_GLS_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">锅炉总蒸吨数</td>
+                    <td >t_GLZZDS_t</td>
+                </tr>
+                <tr height="35">
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">工业炉窑数（座）</td>
+                    <td ></td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">环评情况</td>
+                    <td >t_HPQK_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">环保审批情况</td>
+                    <td ></td>
+                </tr>
+                <tr height="35">
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">三同时验收</td>
+                    <td >t_STSYS_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">排污申报情况</td>
+                    <td >t_PWSBQK_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">有无环境违法情况 </td>
+                    <td ></td>
+                </tr>
+                <tr height="35">
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">工业生产总值<br>
+                        （万元）</td>
+                    <td >t_GYZCZ_t  [t_SJNF_t年]&nbsp;</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">上年交纳排污费<br>
+                        （万元）</td>
+                    <td >t_JNPWF_t万元&nbsp;</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" colspan="">是否编制企业应急预案</td>
+                    <td >t_YJYA_t</td>
+                </tr>
+                <tr height="35">
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">排污许可证编号</td>
+                    <td >t_PWXKZBH_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">初次领证日期</td>
+                    <td ></td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;">许可证有效期/年检日期</td>
+                    <td >t_XKZYXQX_t / t_XKZNJRQ_t</td>
+                </tr>
+                <tr height="35">
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" colspan="">年生产小时</td>
+                    <td >t_NSCSJ_t  [t_SJNF_t年]&nbsp;</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" colspan="">是否安装在线系统</td>
+                    <td  colspan="3">t_SFZX_t</td>
+                </tr>
+                <tr height="35">
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" colspan="2">是否组织过应急演练</td>
+                    <td >t_YJYL_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" colspan="2">企业环境行为信用等级评价</td>
+                    <td >t_XYDJ_t</td>
+                </tr>
+                
+                <tr height="35">
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" colspan="2">是否通过ISO14000认证</td>
+                    <td >t_ISORZ_t</td>
+                    <td style="background-color:#D8EBFC;color:#000;text-align:center;padding:.5em;border:1px solid #6593cf;" colspan="2">是否通过清洁生产审核</td>
+                    <td >t_QJSC_t</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

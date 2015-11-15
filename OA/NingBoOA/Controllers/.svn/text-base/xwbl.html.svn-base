@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>无标题文档</title>
+        <style type="text/css">
+            <!--
+            body,p,ul,dl,dt,dd,h1,h2{margin:0; padding:0; font: normal 18px "微软雅黑",Tahoma,Verdana, Arial;}
+            body{background:#F0F0F0;color: #585858}
+            .main { width:99%;margin:10px auto;background:#fff; border:#E3E0E0 1px solid;min-height:940;
+                -moz-border-radius:10px;/*仅Firefox支持，实现圆角效果*/
+                -webkit-border-radius:10px;/*仅Safari,Chrome支持，实现圆角效果*/
+                -khtml-border-radius:10px;/*仅Safari,Chrome支持，实现圆角效果*/
+                border-radius:10px;/*仅Opera，Safari,Chrome支持，实现圆角效果*/
+            }
+            
+            table.table_header{width:96%; border: 0px; font-weight:100; margin:10px auto; font-size:12px;border-left:none; border-bottom:2px solid #e0e0e0;}
+            
+            table.table_edit{width:96%; border: 1px solid #5c88bf; font-weight:100; margin:8px auto; background:#86acd4; font-size:12px;border-left:none; border-bottom:2px solid #e0e0e0;}
+            table.table_edit tr th i{ color:#FF0000;}
+            table.table_edit tr td i{ color:#FF0000;}
+            
+            table.table_edit tr td{font-size: 18px; text-align:left; padding-left:5px; padding-right:5px;height:45px; border-bottom: 1px solid #86acd4; border-left: 1px solid #5c88bf; line-height:22px; background: #ffffff;}
+            table.table_edit tr th{font-size: 18px;font-weight:100; text-align:right; padding-right:5px; height:40px; border-bottom: 1px solid #86acd4; border-left: 1px solid #5c88bf; line-height:22px; background: #ffffff;}
+            table.table_edit tbody tr.selected td{background:#ffffff; color: #ffffff;}/*自然状态*/
+            table.table_edit tbody tr.ruled td{color: #000;background-color:#f6fbff; }/*鼠标经过 #ffffec*/
+            table.table_edit td input  {font-size:18px;} /*20110114新增 统一input字体大小*/
+            table.table_edit td textarea {font-size:18px;} /*20110114新增 统一textarea字体大小*/
+            table.table_edit td select {font-size:18px;} /*20110114新增 统一select字体大小*/
+            -->
+            </style>
+    </head>
+    
+    <body>
+        <div class="main">
+            <table class="table_header">
+                <tr>
+                    <td>
+                        <p style="font-size: 20px; font-family: 楷体; text-align: center; padding-top:5px;padding-bottom:10px;
+                        line-height: 10px;"><strong>调查询问笔录</strong></p>
+                    </td>
+                </tr>
+            </table>
+            <table width="100%" class="table_edit" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr>
+                    <td width="10%" align="center">案由</td>
+                    <td align="center" colspan="6"></td>
+                </tr>
+                <tr>
+                    <td align="center">时间</td>
+                    <td align="center" colspan="6">t_XWKSSJ_t 至 t_XWJSSJ_t </td>
+                </tr>
+                <tr>
+                    <td width="15%" align="center">调查（询问）地点</td>
+                    <td align="center" colspan="6">t_XWDD_t</td>
+                </tr>
+                <tr>
+                     <th rowspan="6" width="10%" style="text-align: center; font-weight: bold; font-size: 18px">被调查（询问）人信息</th>
+                    <td width="10%" align="center">姓名</td>
+                    <td align="center">t_BXWRMC_t</td>
+                    <td width="10%" align="center">性别</td>
+                    <td align="center">t_XB_t</td>
+                    <td width="10%" align="center">年龄</td>
+                    <td align="center">t_NL_t</td>
+                </tr>
+                <tr>
+                    <td width="20%" align="center">职务或职业</td>
+                    <td align="center" colspan="6">t_ZW_t</td>
+                </tr>
+                <tr>
+                    <td width="20%" align="center">身份证号码</td>
+                    <td align="center" colspan="6">t_SFZHM_t</td>
+                </tr>
+                <tr>
+                    <td width="20%" align="center">工作单位</td>
+                    <td align="center" colspan="6">t_GZDW_t</td>
+                </tr>
+                <tr>
+                    <td width="20%" align="center">家庭住址</td>
+                    <td align="center" colspan="6">t_JTZZ_t</td>
+                </tr>
+                <tr>
+                    <td align="center">邮编</td>
+                    <td align="center">t_YB_t</td>
+                    <td align="center">电话</td>
+                    <td align="center"></td>
+                    <td align="center">与本案关系</td>
+                    <td align="center"></td>
+                </tr>
+                <tr>
+                    <td align="center">调查(询问)人</td>
+                    <td colspan="6">t_XWR_t</td>
+                </tr>
+                <tr>
+                    <td align="center">记录人</td>
+                    <td colspan="6">t_JLR_t</td>
+                </tr>
+                <tr>
+                    <td align="center">参加人</td>
+                    <td colspan="6" align="center">t_CYR_t</td>
+                </tr>
+                <tr>
+                    <td colspan="7">调查(询问)人：我们是 t_HBBM_t 执法人员 <span> </span>，这是我们的执法证件，执法证号分别是：<span>t_ZFZH_t</span>(亮证），请你过目确认。</td>
+                </tr>
+                <tr>
+                    <td colspan="7">被调查(询问)人对执法人员出示证件、表明身份的确认记录：t_SFQR_t</td>
+                </tr>
+                <tr>
+                    <td colspan="7">调查(询问）人:今天依法对你单位进行检查并询问有关情况，你必须如实回答，你依法享有陈述权、申辩权和申请执法人员回避的权利，听清楚了吗？</td>
+                </tr>
+                <tr>
+                    <td colspan="7">答:t_SQHB_t</td>
+                </tr>
+                <tr>
+                    <td colspan="7">询问内容</td>
+                </tr>
+                t_QTWDBF_t
+                <tr>
+                    <td colspan="4" width="60%">被调查（询问）人签名：</td>
+                    <td colspan="4">时间：</td>
+                </tr>
+                <tr>
+                    <td colspan="4" width="60%">调查（询问）人签名：</td>
+                    <td colspan="4">时间：</td>
+                </tr>
+                <tr>
+                    <td colspan="4" width="60%">记录人签名：</td>
+                    <td colspan="4">时间：</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
